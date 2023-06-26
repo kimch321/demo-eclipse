@@ -47,7 +47,7 @@ public class TodoService {
     	// (1) 저장한 엔티티가 유효한지 확인한다. 이 메서드는 2.3.1 Create Todo에서 구현했다.
     	validate(entity);
     	
-    	// (2) 넘겨받은 엔티티 id를 이용해 TodoEntity를 가져온다. 존재하지 않는 엔티티는 업데이트할 수 없기 때뭉이다.
+    	// (2) 넘겨받은 엔티티 id를 이용해 TodoEntity를 가져온다. 존재하지 않는 엔티티는 업데이트할 수 없기 때문이다.
     	final Optional<TodoEntity> original = repository.findById(entity.getId());
     	
     	original.ifPresent(todo -> {
