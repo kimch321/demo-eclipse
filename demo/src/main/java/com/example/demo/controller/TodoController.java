@@ -53,7 +53,7 @@ public class TodoController {
 		// (4) 서비스를 이용해 Todo 엔티티를 생성한다.
 		List<TodoEntity> entities = service.create(entity);
 		
-		// (5) 자바 스트림을 이요해 리턴된 엔티티 리스트를 TodoDTO 리스트로 변환한다.
+		// (5) 자바 스트림을 이용해 리턴된 엔티티 리스트를 TodoDTO 리스트로 변환한다.
 		List<TodoDTO> dtos = entities.stream().map(TodoDTO::new).collect(Collectors.toList());
 
 		// (6) 변환된 TodoDTO 리스트를 이용해 ResponseDTO를 초기화한다.
