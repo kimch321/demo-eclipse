@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.demo.security;
 
 import java.io.IOException;
 
@@ -17,8 +17,6 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
-
-import com.example.demo.security.TokenProvider;
 
 import lombok.extern.slf4j.Slf4j;
 

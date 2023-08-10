@@ -7,7 +7,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.web.filter.CorsFilter;
 
-import com.example.demo.service.JwtAuthenticationFilter;
+import com.example.demo.security.JwtAuthenticationFilter;
 
 import lombok.extern.slf4j.Slf4j;
 
